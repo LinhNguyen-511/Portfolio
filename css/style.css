@@ -1,0 +1,179 @@
+/* GENERAL */
+html {
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Rock Salt', cursive, sans-serif;
+    background-color: white;
+    font-size: 8pt;
+    margin: 3% 3% 0 3%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+/* 
+Page 1
+*/
+.first-page {
+    width: inherit;
+    height: 97vh;
+}
+/* container of the projects: flex verti */
+/* TIP: align-items stretch so items expand across the width of parent */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+.projects-header {
+    flex: 1;
+    align-self: center;
+}
+/* TIP: wrap to put as many items as possible on 1 row */
+.projects-demo {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.scroll-down {
+    flex: 1;
+    text-align: center;
+}
+/* resize the img */
+.project img {
+    flex: 1;
+    align-self: center;
+    width: 350px;
+    height: 350px;
+}
+
+/* 
+Page 2
+*/
+.second-page {
+    width: inherit;
+    height: 100vh;
+    padding: 5%;
+}
+
+.info-form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.info {
+    flex: 2;
+    align-self: center;
+}
+
+/* add shadow animation for contact-form */
+@keyframes contact-shadow {
+    from {
+        box-shadow:
+    5px 5px 10px 10px rgba(135, 207, 235, 0.5), -5px -5px 10px 10px rgba(135, 207, 235, 0.5),
+    5px 5px 15px 15px  rgba(255, 192, 203, 0.5), -5px -5px 15px 15px rgba(255, 192, 203, 0.5)
+    ;
+    }
+    to {
+        box-shadow: 5px 5px 10px 10px rgba(255, 192, 203, 0.5), -5px -5px 10px 10px rgba(255, 192, 203, 0.5), 
+
+    5px 5px 15px 15px rgba(135, 207, 235, 0.5), -5px -5px 15px 15px rgba(135, 207, 235, 0.5)
+    ;
+    }
+}
+
+.contact-form {
+    flex: 1;
+    align-self: center;
+    min-height: 85%;
+    border-radius: 50px;
+    animation-name: contact-shadow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.greetings {
+    text-align: center;
+}
+/* contact form: grid */
+.form-container {
+    display: grid;
+    padding: 45px;
+    gap: 25px;
+    justify-content: space-between;
+    grid-template-areas: 
+    "name-label name"
+    "email-label email"
+    "message-label message"
+    ". submit";
+}
+
+#name-label {
+    grid-area: name-label;
+}
+#email-label {
+    grid-area: email-label;
+}
+#message-label {
+    grid-area: message-label;
+}
+#name {
+    grid-area: name;
+}
+#email {
+    grid-area: email;
+}
+#message {
+    grid-area: message;
+}
+#submit {
+    border: none;
+    background-color: white;
+    font-family: 'Rock Salt', cursive, sans-serif;
+    grid-area: submit;
+}
+
+
+
+/* 
+for smalle screen -> section: fit content
+*/
+@media screen and (max-width: 800px) {
+    section {
+        height: fit-content;
+    }
+    .first-page {
+        height: inherit;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
