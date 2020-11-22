@@ -1,0 +1,37 @@
+<!-- Page 2 -->
+        <section class="second-page">
+            <!-- container: flex hori -->
+            <div class="info-form-container">
+<!-- TODO: type writing effect -->
+                <div class="info">
+                    <p>I am</p>
+                    <p>a web developer</p>
+                    <p>a business economics graduate</p>
+                    
+                    <!-- <p><br>I have</p>
+                    <p>studied and worked in 3 countries</p>
+                    <p>collaborated with people from different cultures on start-up ideation</p> -->
+                    
+                    <p><br>I bring value with my interdisciplinarity</p>
+                </div>
+
+                <div class="contact-form">
+                    <div class="greetings">
+                        <h1>Drop me a message</h1>
+                    </div>
+<!-- TODO: add action to handle form -->
+                    <form action="">
+                        <div class="form-container">
+<!-- TODO: add a chat-like UI: picture + "what can I do for you?"-->
+                        <label id="name-label" for="name">Name</label>
+                        <input type="text" name="" id="name">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="text" name="" id="email">
+                        <label id="message-label" for="message">Message</label>
+                        <!-- text are for long input -->
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Send" id="submit"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
