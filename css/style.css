@@ -127,8 +127,8 @@ Page 1
 }
 /* resize the img */
 .project img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 .projects-demo a:last-child {
