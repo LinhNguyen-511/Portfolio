@@ -1,107 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linh Nguyen</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/7f51b26e8c.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7f51b26e8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="master-container">
-        <!-- Page 1 -->
-        <header>
-            <!-- Header -->
-            <!-- my-name: grid -->
-            <div class="my-name">
-                <li class="name-letter">L</li>
-                <li class="name-letter">I</li>
-                <li class="name-letter">N</li>
-                <li class="name-letter">H</li>
-            </div>
-            <div>
-                <ul class="social-list">
-                  <li>
-                    <a href="mailto:mlinhng05@gmail.com" target="_blank"
-                      ><i class="fas fa-envelope"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="http://bit.ly/38WDxw5" target="_blank">
-                      <i class="fab fa-linkedin"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/LinhNguyen-511" target="_blank"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="./CV-LinhNguyen.pdf" download target="_blank"
-                      ><i class="fas fa-address-card"></i
-                    ></a>
-                  </li>
-                </ul>
+      <!-- Page 1 -->
+      <header>
+        <!-- Header -->
+        <!-- my-name: grid -->
+        <div class="my-name">
+          <li class="name-letter">L</li>
+          <li class="name-letter">I</li>
+          <li class="name-letter">N</li>
+          <li class="name-letter">H</li>
+        </div>
+        <div>
+          <ul class="social-list">
+            <li>
+              <a href="mailto:mlinhng05@gmail.com" target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://bit.ly/38WDxw5" target="_blank">
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/LinhNguyen-511" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./CV-LinhNguyen.pdf" download target="_blank"
+                ><i class="fas fa-address-card"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="first-page">
+        <!-- Project snippets: flex verti -->
+        <div class="projects">
+          <!-- the header -->
+          <div class="projects-header"><h2>My Work</h2></div>
+          <!-- demos: grid -->
+          <div class="projects-demo">
+            <!-- TODO: add images and demos + hover effect to class = project-->
+            <a
+              href=" https://linhnguyen-511.github.io/cat-website/"
+              class="project"
+              target="_blank"
+            >
+              <img src="./images/cat-website.png" alt="Cat website" />
+              <div class="tech-stack">
+                <i class="fab fa-vuejs" style="color: green"></i>
+                <i class="fab fa-html5" style="color: orange"></i>
+                <i class="fab fa-css3-alt" style="color: blue"></i>
               </div>
-        </header>
-        <section class="first-page">
-    
-            <!-- Project snippets: flex verti -->
-            <div class="projects">
-                <!-- the header -->
-                <div class="projects-header"><h2>My Work</h2></div>
-                <!-- demos: grid -->
-                <div class="projects-demo">
-<!-- TODO: add images and demos + hover effect to class = project-->
-                    <a href=" https://linhnguyen-511.github.io/ecommerce-vue-cli/" class="project" target="_blank">
-                      <img src="./images/VUE Chair Store.png" alt="Vue store website"  >
-                      <div class="tech-stack">
-                      <i class="fab fa-vuejs" style="color: green;"></i>
-                      <i class="fab fa-html5" style="color: orange;"></i>
-                      <i class="fab fa-css3-alt" style="color: blue;"></i>  
-                      </div>
-                    </a>
-                    <a href="https://linhnguyen-511.github.io/vue-calculator/" class="project" target="_blank">
-                        <img src="./images/Vue Calculator.png" alt="Vue calculator website" >
-                        <div class="tech-stack">
-                        <i class="fab fa-vuejs" style="color: green;"></i>
-                        <i class="fab fa-html5" style="color: orange;"></i>
-                        <i class="fab fa-css3-alt" style="color: blue;"></i>  
-                        </div>
-                    </a>
-                    <a href="https://linhnguyen-511.github.io/todo-list/" class="project" target="_blank">
-                        <img src="./images/TodoList.PNG" alt="Todo list website">
-                        <div class="tech-stack">
-                        <i class="fab fa-js-square" style="color: yellow;"></i>
-                        <i class="fab fa-html5" style="color: orange;"></i>
-                        <i class="fab fa-css3-alt" style="color: blue;"></i>  
-                        </div>
-                    </a>
-                    <a href="https://youtu.be/RdetJh_apjk" class="project" id="calc-proj" target="_blank">
-                        <img src="./images/MedicalCalculator.png" alt="Medical Calculator App">
-                        <div class="tech-stack">
-                            <i class="fab fa-android" style="color: yellowgreen;"></i>
-                            <i class="fab fa-java" style="color: skyblue"></i>
-                        </div>
-                    </a>
-                    <a href="https://youtu.be/1lcgQQHn20s" class="project" id="real-proj" target="_blank">
-                        <img src="./images/realist.PNG" alt="Real Estate App">
-                        <div class="tech-stack">
-                            <i class="fab fa-android" style="color: yellowgreen;"></i>
-                            <i class="fab fa-java" style="color: skyblue"></i>
-                        </div>
-                    </a>
-
-                    
-                </div>
-                <!-- <div class="scroll-down">
+            </a>
+            <a
+              href=" https://linhnguyen-511.github.io/ecommerce-vue-cli/"
+              class="project"
+              target="_blank"
+            >
+              <img src="./images/VUE Chair Store.png" alt="Vue store website" />
+              <div class="tech-stack">
+                <i class="fab fa-vuejs" style="color: green"></i>
+                <i class="fab fa-html5" style="color: orange"></i>
+                <i class="fab fa-css3-alt" style="color: blue"></i>
+              </div>
+            </a>
+            <a
+              href="https://linhnguyen-511.github.io/vue-calculator/"
+              class="project"
+              target="_blank"
+            >
+              <img
+                src="./images/Vue Calculator.png"
+                alt="Vue calculator website"
+              />
+              <div class="tech-stack">
+                <i class="fab fa-vuejs" style="color: green"></i>
+                <i class="fab fa-html5" style="color: orange"></i>
+                <i class="fab fa-css3-alt" style="color: blue"></i>
+              </div>
+            </a>
+            <a
+              href="https://linhnguyen-511.github.io/todo-list/"
+              class="project"
+              target="_blank"
+            >
+              <img src="./images/TodoList.PNG" alt="Todo list website" />
+              <div class="tech-stack">
+                <i class="fab fa-js-square" style="color: yellow"></i>
+                <i class="fab fa-html5" style="color: orange"></i>
+                <i class="fab fa-css3-alt" style="color: blue"></i>
+              </div>
+            </a>
+            <a
+              href="https://youtu.be/RdetJh_apjk"
+              class="project"
+              id="calc-proj"
+              target="_blank"
+            >
+              <img
+                src="./images/MedicalCalculator.png"
+                alt="Medical Calculator App"
+              />
+              <div class="tech-stack">
+                <i class="fab fa-android" style="color: yellowgreen"></i>
+                <i class="fab fa-java" style="color: skyblue"></i>
+              </div>
+            </a>
+            <a
+              href="https://youtu.be/1lcgQQHn20s"
+              class="project"
+              id="real-proj"
+              target="_blank"
+            >
+              <img src="./images/realist.PNG" alt="Real Estate App" />
+              <div class="tech-stack">
+                <i class="fab fa-android" style="color: yellowgreen"></i>
+                <i class="fab fa-java" style="color: skyblue"></i>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="scroll-down">
                     <div>About me</div> 
                     <div><i class="fas fa-arrow-down"></i></div>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
